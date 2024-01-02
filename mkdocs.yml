@@ -1,0 +1,10 @@
+site_name: UIU Management System
+site_url: https://uiu-ms.web.app/
+nav:
+    - Home: index.md
+    - Installation Process: installation.md
+    - User GuideLines : guideline.md
+    - Demo Information : demoinfo.md
+    - API Reference : api.md
+
+theme: readthedocs
