@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://uiu-ms.web.app/</loc>
+         <loc>https://saif-tasnim.github.io/UIU-MS-Docs/</loc>
          <lastmod>2024-01-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://uiu-ms.web.app/api/</loc>
+         <loc>https://saif-tasnim.github.io/UIU-MS-Docs/api/</loc>
          <lastmod>2024-01-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://uiu-ms.web.app/demoinfo/</loc>
+         <loc>https://saif-tasnim.github.io/UIU-MS-Docs/contribution/</loc>
          <lastmod>2024-01-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://uiu-ms.web.app/guideline/</loc>
+         <loc>https://saif-tasnim.github.io/UIU-MS-Docs/demoinfo/</loc>
          <lastmod>2024-01-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://uiu-ms.web.app/installation/</loc>
+         <loc>https://saif-tasnim.github.io/UIU-MS-Docs/guideline/</loc>
          <lastmod>2024-01-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://uiu-ms.web.app/testing/</loc>
+         <loc>https://saif-tasnim.github.io/UIU-MS-Docs/installation/</loc>
+         <lastmod>2024-01-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://saif-tasnim.github.io/UIU-MS-Docs/testing/</loc>
          <lastmod>2024-01-06</lastmod>
          <changefreq>daily</changefreq>
     </url>

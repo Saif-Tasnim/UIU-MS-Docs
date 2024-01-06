@@ -1,10 +1,28 @@
 # API Reference
 
-## Endpoints
+### Course Enrollment
+
+#### GET Method: 
+this request is done by Saif Tasnim Chowdhury
+
+```javascript
+$.ajax({
+  url: '/login',
+  method: 'GET',
+  
+  success: function(response) {
+    console.log(response);
+  },
+  error: function(error) {
+    console.error(error);
+  }
+});
+```
 
 ### Course Enrollment
 
-#### Request
+#### Post Method: 
+this request is done by Saif Tasnim Chowdhury
 
 ```javascript
 $.ajax({
@@ -25,7 +43,8 @@ $.ajax({
 
 ### Counseling Request
 
-#### Request
+#### Post Method:
+this request is done by Arafat Hossen
 
 ```javascript
 $.ajax({
@@ -47,7 +66,8 @@ $.ajax({
 
 ### Blog Sharing
 
-#### Request
+#### Post Method:
+this request is done by Abdul Muhit Chowdhury
 
 ```javascript
 $.ajax({
@@ -69,12 +89,44 @@ $.ajax({
 
 ### Shuttle Schedule
 
-#### Request
+#### Post Method:
+this request is done by Iftakharul Islam Ifty
 
 ```javascript
 $.ajax({
   url: '/shuttle-schedule',
-  method: 'GET',
+  method: 'POST',
+   data: {
+    up_time: 'Shuttle_Up_Time',
+    shuttle_no: 'Shuttle_No',
+    from: 'Shuttle_From',
+    to : "Shuttle_to",
+    current: "Shuttle_Current_Location"
+    staffId: 'STAFF_ID',
+  },
+  success: function(response) {
+    console.log(response);
+  },
+  error: function(error) {
+    console.error(error);
+  }
+});
+```
+
+### Issue Sending Admin
+
+#### Post Method:
+this request is done by Sirajum Monira Soha
+
+```javascript
+$.ajax({
+  url: '/issue-complaining',
+  method: 'POST',
+  data: {
+    subject: 'Issue_Subject',
+    desc: 'Issue_Description',
+    staffId: 'STAFF_ID',
+  },
   success: function(response) {
     console.log(response);
   },
