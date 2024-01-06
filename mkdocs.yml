@@ -6,6 +6,7 @@ nav:
     - User GuideLines : guideline.md
     - Demo Information : demoinfo.md
     - Testing : testing.md
+    - Contributor : contribution.md
     - API Reference : api.md
 
 theme: readthedocs
