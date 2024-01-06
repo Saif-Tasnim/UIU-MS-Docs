@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://saif-tasnim.github.io/UIU-MS-Docs/api/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://saif-tasnim.github.io/UIU-MS-Docs/contribution/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>API Reference - UIU Management System</title>
+    <title>Contributor - UIU Management System</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "API Reference";
-        var mkdocs_page_input_path = "api.md";
-        var mkdocs_page_url = "/UIU-MS-Docs/api/";
+        var mkdocs_page_name = "Contributor";
+        var mkdocs_page_input_path = "contribution.md";
+        var mkdocs_page_url = "/UIU-MS-Docs/contribution/";
       </script>
     
     <!--[if lt IE 9]>
@@ -59,42 +59,16 @@
                 <li class="toctree-l1"><a class="reference internal" href="../testing/">Testing</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../contribution/">Contributor</a>
-                </li>
-              </ul>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">API Reference</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Contributor</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#endpoints">Endpoints</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#course-enrollment">Course Enrollment</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#request">Request</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#counseling-request">Counseling Request</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#request_1">Request</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#blog-sharing">Blog Sharing</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#request_2">Request</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#shuttle-schedule">Shuttle Schedule</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#request_3">Request</a>
-    </li>
-        </ul>
-    </li>
-        </ul>
+    <li class="toctree-l2"><a class="reference internal" href="#team-details">Team Details</a>
     </li>
     </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../api/">API Reference</a>
                 </li>
               </ul>
       </div>
@@ -111,7 +85,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">API Reference</li>
+      <li class="breadcrumb-item active">Contributor</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -120,79 +94,63 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="api-reference">API Reference</h1>
-<h2 id="endpoints">Endpoints</h2>
-<h3 id="course-enrollment">Course Enrollment</h3>
-<h4 id="request">Request</h4>
-<pre><code class="language-javascript">$.ajax({
-  url: '/enroll',
-  method: 'POST',
-  data: {
-    courseId: 'COURSE_ID',
-    userId: 'USER_ID',
-  },
-  success: function(response) {
-    console.log(response);
-  },
-  error: function(error) {
-    console.error(error);
-  }
-});
-</code></pre>
-<h3 id="counseling-request">Counseling Request</h3>
-<h4 id="request_1">Request</h4>
-<pre><code class="language-javascript">$.ajax({
-  url: '/request-counseling',
-  method: 'POST',
-  data: {
-    facultyId: 'FACULTY_ID',
-    studentId: 'STUDENT_ID',
-    requestedTime: 'TIME',
-  },
-  success: function(response) {
-    console.log(response);
-  },
-  error: function(error) {
-    console.error(error);
-  }
-});
-</code></pre>
-<h3 id="blog-sharing">Blog Sharing</h3>
-<h4 id="request_2">Request</h4>
-<pre><code class="language-javascript">$.ajax({
-  url: '/share-blog',
-  method: 'POST',
-  data: {
-    title: 'BLOG_TITLE',
-    content: 'BLOG_CONTENT',
-    authorId: 'AUTHOR_ID',
-  },
-  success: function(response) {
-    console.log(response);
-  },
-  error: function(error) {
-    console.error(error);
-  }
-});
-</code></pre>
-<h3 id="shuttle-schedule">Shuttle Schedule</h3>
-<h4 id="request_3">Request</h4>
-<pre><code class="language-javascript">$.ajax({
-  url: '/shuttle-schedule',
-  method: 'GET',
-  success: function(response) {
-    console.log(response);
-  },
-  error: function(error) {
-    console.error(error);
-  }
-});
-</code></pre>
+                <h1 id="contributor">Contributor</h1>
+<h2 id="team-details">Team Details</h2>
+<ul>
+<li>
+<p>Saif Tasnim Chowhdury - Captain  </p>
+<ul>
+<li>maintain the version control system (git)</li>
+<li>focused on merging and removing conflict branch merge </li>
+<li>inspired team member for their work</li>
+<li>handle the bug of code and fix the issue</li>
+<li>worked on authenticating user to the system and develop an authentication system</li>
+<li>maintain the server side code with creating api and connect with frontend features</li>
+</ul>
+</li>
+<li>
+<p>Arafat Hossen - Vice Captain </p>
+<ul>
+<li>worked on the self branch</li>
+<li>handle the team member in emergency case</li>
+<li>also worked on fixing bug related issue</li>
+<li>worked on developing student panel features   </li>
+</ul>
+</li>
+<li>
+<p>Abdul Muhit Chowdhury - FrontEnd Ninja</p>
+<ul>
+<li>worked on the self branch</li>
+<li>worked on developing admin panel features</li>
+<li>also worked on fixing bug related issue</li>
+<li>focused on improving code formation</li>
+</ul>
+</li>
+<li>
+<p>Iftakharul Islam Ifty - UX/UI Majestro</p>
+<ul>
+<li>worked on the self branch</li>
+<li>worked on developing staff panel features</li>
+<li>also worked on fixing bug related issue</li>
+<li>focused on improving ui design</li>
+</ul>
+</li>
+<li>
+<p>Sirajum Monira Soha - Code Conductor</p>
+<ul>
+<li>worked on the self branch</li>
+<li>worked on developing faculty panel features</li>
+<li>also worked on fixing bug related issue</li>
+<li>helps to choose and use good quality animation and images</li>
+</ul>
+</li>
+</ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../contribution/" class="btn btn-neutral float-left" title="Contributor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../testing/" class="btn btn-neutral float-left" title="Testing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../api/" class="btn btn-neutral float-right" title="API Reference">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -215,8 +173,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../contribution/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../testing/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../api/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
