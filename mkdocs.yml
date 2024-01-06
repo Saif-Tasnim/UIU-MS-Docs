@@ -1,5 +1,5 @@
 site_name: UIU Management System
-site_url: https://uiu-ms.web.app/
+site_url: https://saif-tasnim.github.io/UIU-MS-Docs/
 nav:
     - Home: index.md
     - Installation Process: installation.md
