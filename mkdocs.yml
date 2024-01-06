@@ -5,6 +5,7 @@ nav:
     - Installation Process: installation.md
     - User GuideLines : guideline.md
     - Demo Information : demoinfo.md
+    - Testing : testing.md
     - API Reference : api.md
 
 theme: readthedocs
