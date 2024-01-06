@@ -1,6 +1,6 @@
 # API Reference
 
-### Course Enrollment
+### LogIn
 
 #### GET Method: 
 this request is done by Saif Tasnim Chowdhury
@@ -9,7 +9,7 @@ this request is done by Saif Tasnim Chowdhury
 $.ajax({
   url: '/login',
   method: 'GET',
-  
+
   success: function(response) {
     console.log(response);
   },

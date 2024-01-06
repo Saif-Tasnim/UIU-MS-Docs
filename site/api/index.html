@@ -66,31 +66,39 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">API Reference</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#endpoints">Endpoints</a>
+    <li class="toctree-l2"><a class="reference internal" href="#login">LogIn</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#course-enrollment">Course Enrollment</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#request">Request</a>
+    <li class="toctree-l3"><a class="reference internal" href="#get-method">GET Method:</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#counseling-request">Counseling Request</a>
+    <li class="toctree-l2"><a class="reference internal" href="#course-enrollment">Course Enrollment</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#request_1">Request</a>
+    <li class="toctree-l3"><a class="reference internal" href="#post-method">Post Method:</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#blog-sharing">Blog Sharing</a>
+    <li class="toctree-l2"><a class="reference internal" href="#counseling-request">Counseling Request</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#request_2">Request</a>
+    <li class="toctree-l3"><a class="reference internal" href="#post-method_1">Post Method:</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#shuttle-schedule">Shuttle Schedule</a>
+    <li class="toctree-l2"><a class="reference internal" href="#blog-sharing">Blog Sharing</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#request_3">Request</a>
+    <li class="toctree-l3"><a class="reference internal" href="#post-method_2">Post Method:</a>
     </li>
         </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#shuttle-schedule">Shuttle Schedule</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#post-method_3">Post Method:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#issue-sending-admin">Issue Sending Admin</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#post-method_4">Post Method:</a>
     </li>
         </ul>
     </li>
@@ -121,9 +129,24 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="api-reference">API Reference</h1>
-<h2 id="endpoints">Endpoints</h2>
+<h3 id="login">LogIn</h3>
+<h4 id="get-method">GET Method:</h4>
+<p>this request is done by Saif Tasnim Chowdhury</p>
+<pre><code class="language-javascript">$.ajax({
+  url: '/login',
+  method: 'GET',
+
+  success: function(response) {
+    console.log(response);
+  },
+  error: function(error) {
+    console.error(error);
+  }
+});
+</code></pre>
 <h3 id="course-enrollment">Course Enrollment</h3>
-<h4 id="request">Request</h4>
+<h4 id="post-method">Post Method:</h4>
+<p>this request is done by Saif Tasnim Chowdhury</p>
 <pre><code class="language-javascript">$.ajax({
   url: '/enroll',
   method: 'POST',
@@ -140,7 +163,8 @@
 });
 </code></pre>
 <h3 id="counseling-request">Counseling Request</h3>
-<h4 id="request_1">Request</h4>
+<h4 id="post-method_1">Post Method:</h4>
+<p>this request is done by Arafat Hossen</p>
 <pre><code class="language-javascript">$.ajax({
   url: '/request-counseling',
   method: 'POST',
@@ -158,7 +182,8 @@
 });
 </code></pre>
 <h3 id="blog-sharing">Blog Sharing</h3>
-<h4 id="request_2">Request</h4>
+<h4 id="post-method_2">Post Method:</h4>
+<p>this request is done by Abdul Muhit Chowdhury</p>
 <pre><code class="language-javascript">$.ajax({
   url: '/share-blog',
   method: 'POST',
@@ -176,10 +201,38 @@
 });
 </code></pre>
 <h3 id="shuttle-schedule">Shuttle Schedule</h3>
-<h4 id="request_3">Request</h4>
+<h4 id="post-method_3">Post Method:</h4>
+<p>this request is done by Iftakharul Islam Ifty</p>
 <pre><code class="language-javascript">$.ajax({
   url: '/shuttle-schedule',
-  method: 'GET',
+  method: 'POST',
+   data: {
+    up_time: 'Shuttle_Up_Time',
+    shuttle_no: 'Shuttle_No',
+    from: 'Shuttle_From',
+    to : &quot;Shuttle_to&quot;,
+    current: &quot;Shuttle_Current_Location&quot;
+    staffId: 'STAFF_ID',
+  },
+  success: function(response) {
+    console.log(response);
+  },
+  error: function(error) {
+    console.error(error);
+  }
+});
+</code></pre>
+<h3 id="issue-sending-admin">Issue Sending Admin</h3>
+<h4 id="post-method_4">Post Method:</h4>
+<p>this request is done by Sirajum Monira Soha</p>
+<pre><code class="language-javascript">$.ajax({
+  url: '/issue-complaining',
+  method: 'POST',
+  data: {
+    subject: 'Issue_Subject',
+    desc: 'Issue_Description',
+    staffId: 'STAFF_ID',
+  },
   success: function(response) {
     console.log(response);
   },
